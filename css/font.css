@@ -1,0 +1,134 @@
+body {
+  font-family: "Pretendard";
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.text-white {
+  color: white;
+}
+.text-center {
+  text-align: center;
+}
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+h1 {
+  font-size: 50px;
+}
+.hd {
+  border-bottom: 1px solid #ccc;
+  padding: 1em 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+#gnb li {
+  padding-left: 1em;
+  font-weight: 200;
+}
+
+#gnb li a {
+  transition: 0.5s;
+}
+
+#gnb li:after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: black;
+  width: 0;
+  transition: 0.5s;
+}
+
+#gnb li:nth-child(1):after {
+  background-color: black;
+}
+
+#gnb li:nth-child(2):after {
+  background-color: yellow;
+}
+
+#gnb li:nth-child(3):after {
+  background-color: blueviolet;
+}
+
+#gnb li:hover:after {
+  width: 100%;
+}
+
+.child1,
+.child2,
+.child3 {
+  height: calc(100vh - 80px);
+  align-items: center;
+  justify-content: center;
+}
+
+.child1 {
+  background-color: rgb(20, 117, 235);
+}
+.child2 {
+  background-color: rgb(236, 236, 36);
+}
+.child3 {
+  background-color: rgb(239, 90, 194);
+}
+
+.ft {
+  padding: 2em;
+}
+
+.sns {
+  justify-content: center;
+}
+
+.sns li {
+  padding: 8px;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.sns li:first-child {
+  background-color: rgb(126, 16, 101);
+}
+.sns li:nth-child(2) {
+  background-color: rgb(23, 23, 163);
+}
+.sns li:last-child {
+  background-color: rgb(164, 0, 0);
+}
+
+/* svg 다루기 */
+
+.hd h1 svg {
+  height: 20px;
+  display: block;
+}
+.hd h1 a {
+  display: block;
+}
+
+.hd h1 a:hover svg path {
+  fill: rgb(86, 31, 205);
+}
+.hd h1 a:hover svg path:nth-child(1) {
+  fill: rgb(15, 202, 146);
+}
+.hd {
+  border-radius: 50px;
+  position: fixed;
+  top: 1rem;
+
+  right: 1rem;
+  left: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+  color: black;
+  justify-content: center;
+}
